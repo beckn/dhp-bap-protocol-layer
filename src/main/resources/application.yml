@@ -13,6 +13,8 @@ spring:
     default-property-inclusion: non_null
 context:
   domain: nic2004:52110
+  domain_consultation: nic2021:85110
+  domain_diagnostics: nic2021:85195
   city: std:080
   country: IND
   bap_id: box.beckn.org
@@ -21,7 +23,7 @@ context:
 database:
   mongo:
     url: mongodb://localhost:27017
-    name: sandbox_bap
+    name: sandbox_dhp_bap
 beckn:
   security.enabled: false
 security:
@@ -29,13 +31,13 @@ security:
     private_key:
     unique_key_id: key1
 registry_service:
-  url: https://demo4460370.mockable.io/registry/
+  url: https://beckn-one.succinct.in/subscribers/
   retry:
     max_attempts: 3
     initial_interval_in_millis: 1000
     interval_multiplier: 1.0
 bpp_registry_service:
-  url: https://demo4460370.mockable.io/bpp_registry/
+  url: https://beckn-one.succinct.in/subscribers/
 management:
   endpoints:
     web:
