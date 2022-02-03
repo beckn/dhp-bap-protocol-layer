@@ -17,8 +17,8 @@ context:
   domain_diagnostics: nic2021:85195
   city: std:080
   country: IND
-  bap_id: box.beckn.org
-  bap_uri: http://qa.api.box.beckn.org/bap/v1
+  bap_id: healthcarebap.becknprotocol.io
+  bap_uri: https://api.healthcarebap.becknprotocol.io/protocol/v1/
   ttl_seconds: 20
 database:
   mongo:
@@ -28,8 +28,9 @@ beckn:
   security.enabled: false
 security:
   self:
-    private_key:
-    unique_key_id: key1
+    public_key: X+jgcPXHD4kFzvcbb3eaxWRA5UwB8Mm6IykeTPADofU=
+    private_key: ${PRIVATE_KEY}
+    unique_key_id: key_12
 registry_service:
   url: https://beckn-one.succinct.in/subscribers/
   retry:
