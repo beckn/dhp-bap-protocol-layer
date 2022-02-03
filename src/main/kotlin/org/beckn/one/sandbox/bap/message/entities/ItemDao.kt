@@ -5,6 +5,7 @@ import org.beckn.protocol.schemas.Default
 data class ItemDao @Default constructor(
   val id: String? = null,
   val parentItemId: String? = null,
+  val fulfillmentId: String? = null,
   val descriptor: DescriptorDao? = null,
   val price: PriceDao? = null,
   val categoryId: String? = null,

@@ -16,6 +16,7 @@ data class ProviderCatalogDao @Default constructor(
   val descriptor: DescriptorDao? = null,
   val locations: List<LocationDao>? = null,
   val categories: List<CategoryDao>? = null,
+  val fulfillments: List<FulfillmentDao>? = null,
   val items: List<ItemDao>? = null,
   val tags: Map<String, String>? = null,
   val exp: LocalDateTime? = null,
